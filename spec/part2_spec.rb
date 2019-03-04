@@ -53,6 +53,7 @@ describe '#binary_multiple_of_4?' do
   end
   it 'rejects invalid binary numbers [10 points]' , points: 10 do
     expect(binary_multiple_of_4?('a100')).to be_falsy, "'a100' is not a valid binary number!"
+    expect(binary_multiple_of_4?('1000000b1010101')).to be_falsy, "'b' is not a valid binary number!"
     expect(binary_multiple_of_4?('')).to be_falsy, 'The empty string is not a valid binary number!'
   end
 end

@@ -38,6 +38,9 @@ describe 'Ruby intro part 1' do
     it 'returns value of the element if just one element [10 points]', points: 10 do
       expect(max_2_sum([3])).to eq(3)
     end
+    it 'works even when strings are in array' do
+      expect(max_2_sum([3, 'dog'])).to eq(3)
+    end
   end
 
   describe '#sum_to_n' do
